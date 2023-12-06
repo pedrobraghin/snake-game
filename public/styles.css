@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  position: relative;
+}
+
+#play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+  border: none;
+}
+
+#play-button:hover {
+  background-color: #168d16;
+  color: #ffffff;
+}
+
+.score-container {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#end-game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #f4f4ff;
+  width: 20rem;
+  min-height: 8rem;
+  display: none;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+#end-game-container > div {
+  font-size: 1.2rem;
+}
+
+#try-again-button {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+#try-again-button:hover {
+  background-color: #c8c8c8;
+}
+
+h2 {
+  color: #ff0000;
+}
